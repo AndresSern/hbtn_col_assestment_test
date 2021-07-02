@@ -1,6 +1,6 @@
 const express = require("express");
 const jwt = require("jsonwebtoken");
-const { checkToken } = require("../autorization/checkToken");
+const { checkToken } = require("../authorization/checkToken");
 const router = express.Router();
 
 router.post("/", checkToken, (req, res) => {

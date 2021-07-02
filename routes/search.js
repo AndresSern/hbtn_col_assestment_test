@@ -1,5 +1,5 @@
 const express = require("express");
-const { checkToken } = require("../autorization/checkToken");
+const { checkToken } = require("../authorization/checkToken");
 const router = express.Router();
 
 router.get("/", checkToken, (req, res) => {
